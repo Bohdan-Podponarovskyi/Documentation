@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Documentation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Staatliches&family=Tourney:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -30,28 +30,41 @@
     <main class="main content-wrapper">
         <nav class="main__nav">
             <ul class="main__nav-list">
-                <li class="main__nav-item"><a href="" class="main__nav-link">Introduction</a></li>
-                <li class="main__nav-item"><a href="" class="main__nav-link">core components</a></li>
-                <li class="main__nav-item"><a href="" class="main__nav-link">react fundamentals</a></li>
-                <li class="main__nav-item"><a href="" class="main__nav-link">handling text input</a></li>
+                <li class="main__nav-item"><a href="#main__chapter-title_chapter-1" class="main__nav-link">Introduction</a></li>
+                <li class="main__nav-item"><a href="#main__chapter-title_chapter-2" class="main__nav-link">core components</a></li>
+                <li class="main__nav-item"><a href="#main__chapter-title_chapter-3" class="main__nav-link">react fundamentals</a></li>
+                <li class="main__nav-item"><a href="#main__chapter-title_chapter-4" class="main__nav-link">handling text input</a></li>
             </ul>
         </nav>
         <article class="main__text">
             <section class="main__text-chapter">
-                <h2 class="main__chapter-title">Introduction<span class="main__chapter-number">Chapter 1</span></h2>
-                <p class="main__chapter-text">Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to their own section. Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
+                <h2 class="main__chapter-title" id="main__chapter-title_chapter-1">Introduction<span class="main__chapter-number">Chapter 1</span></h2>
+                <p class="main__chapter-text">Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to
+                    <span class="text_underline">their own section</span>. Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
             </section>
             <section class="main__text-chapter">
-                <h2 class="main__chapter-title">core components<span class="main__chapter-number">Chapter 2</span></h2>
-                <p class="main__chapter-text">React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: bundles of reusable, nestable code. You can learn more about React in the next section. But first, let’s cover how components work in React Native.</p>
+                <h2 class="main__chapter-title" id="main__chapter-title_chapter-2">core components<span class="main__chapter-number">Chapter 2</span></h2>
+                <p class="main__chapter-text">React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabilities. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components:
+                    <span class="text_italic">bundles of reusable, nestable code</span>. You can learn more about React in the next section. But first, let’s cover how components work in React Native.</p>
             </section>
             <section class="main__text-chapter">
-                <h2 class="main__chapter-title"><span class="main__chapter-number">Chapter 3</span></h2>
-                <p class="main__chapter-text"></p>
+                <h2 class="main__chapter-title" id="main__chapter-title_chapter-3">react fundamentals<span class="main__chapter-number">Chapter 3</span></h2>
+                <p class="main__chapter-text">React Native runs on
+                    <span class="text_underline">React</span>, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.</p>
+                <p class="main__chapter-text">We’re going to cover the core concepts behind React:</p>
+                <p class="main__chapter-text"><span class="text_bold">+ components.</span> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.</p>
+                <p class="main__chapter-text"><span class="text_bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so: <span class="text_code text_new-line">&#60;Text&#62;Hello, I am your cat!&#60;/Text&#62;</span>.</p>
+                <p class="main__chapter-text">The React docs have
+                    <span class="text_underline">a comprehensive guide to JSX</span> you can refer to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a
+                   <span class="text_code">name</span> for the cat, name, and embedding it with curly braces inside <span class="text_code">&#60;Text&#62;</span>.</p>
+                <p class="main__chapter-text"><span class="text_bold">+ props.</span> Props is short for “properties”. </p>
+                <p class="main__chapter-text"><span class="text_bold">+ state.</span> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!</p>
             </section>
             <section class="main__text-chapter">
-                <h2 class="main__chapter-title"><span class="main__chapter-number">Chapter 4</span></h2>
-                <p class="main__chapter-text"></p>
+                <h2 class="main__chapter-title" id="main__chapter-title_chapter-4">handling text input<span class="main__chapter-number">Chapter 4</span></h2>
+                <p class="main__chapter-text">TextInput is a Core Component that allows the user to enter text. It has an
+                    <span class="text_italic">onChangeText</span> prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.</p>
+                <p class="main__chapter-text">For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕 🍕".</p>
             </section>
         </article>
     </main>
